@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yara's Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Yara's Portfolio</h1>
+      <nav>
+        <div class="menu-toggle">☰</div>
+        <ul class="nav-list">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about" class="fade-in">
+        <h2>About Me</h2>
+        <p>
+          I'm a Computer Science student passionate about creating user-friendly
+          web applications. I enjoy learning new technologies and applying them
+          to build creative solutions. My goal is to become a skilled web
+          developer.
+        </p>
+      </section>
+
+      <section id="projects" class="fade-in">
+        <h2>Projects</h2>
+        <div class="projects-container">
+          <div class="project">
+            <img src="assets/weather.png" alt="Weather App" />
+            <h3>Weather App</h3>
+            <button onclick="toggleDetails('project1-details', this)">
+              Show Details
+            </button>
+            <p id="project1-details" class="project-details">
+              A web application that displays weather information, built with
+              HTML, CSS, and JavaScript.
+            </p>
+          </div>
+          <div class="project">
+            <img src="assets/todo.png" alt="To-Do App" />
+            <h3>To-Do App</h3>
+            <button onclick="toggleDetails('project2-details', this)">
+              Show Details
+            </button>
+            <p id="project2-details" class="project-details">
+              A web application to manage daily tasks, built with HTML, CSS, and
+              JavaScript.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="fade-in">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML & CSS</li>
+          <li>JavaScript</li>
+          <li>Web Design</li>
+          <li>Problem Solving</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="fade-in">
+        <h2>Contact</h2>
+        <form id="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2023 Yara. All rights reserved.</p>
+    </footer>
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span id="popup-close" class="popup-close">×</span>
+        <p id="popup-message"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+# Personal Portfolio Website Project Report
+
+## Introduction
+
+This project develops a personal portfolio website using HTML, CSS, and JavaScript for the web programming course at Onaizah College. The website showcases a Computer Science student's skills, projects, and contact information in a modern, interactive, and user-friendly design. The "Personal Portfolio" subject highlights front-end development proficiency with a focus on aesthetics and functionality.
+
+## Methodology
+
+The website is designed with a centered, responsive layout and interactive features, structured as follows:
+
+1. **HTML Structure**:
+
+   - The `index.html` file includes a header with a navigation menu, sections for About Me, Projects, Skills, and Contact, and a footer.
+   - Semantic HTML ensures accessibility.
+   - A mobile-friendly navigation toggle and a custom pop-up for form feedback enhance usability.
+
+2. **CSS Styling**:
+
+   - The `style.css` file uses the Poppins font from Google Fonts.
+   - A high-contrast color palette (dark blue #1e3a8a, silver #e5e7eb, white #ffffff, accent blue #3b82f6) ensures readability.
+   - Projects are styled as compact cards with larger images, titles below images, and buttons, arranged side-by-side when screen width allows.
+   - The contact form is centered, with a polished design and responsive width.
+   - Navigation links have clear, non-boxed text.
+   - Animations include fade-in for sections, slide-in for project details, and a pop-up scale-in effect.
+   - A custom scrollbar matches the theme.
+
+3. **JavaScript Interactivity**:
+
+   - The `script.js` file toggles project details with a slide-in animation and updates button text ("Show Details"/"Hide Details").
+   - The Contact form validates emails and displays a styled pop-up for feedback.
+   - A mobile menu toggle and pop-up close functionality improve UX.
+
+4. **Content**:
+
+   - The About Me section describes a student's passion for web development.
+   - The Projects section features two projects (Weather App and To-Do App) with placeholder images.
+   - The Skills section lists HTML, CSS, JavaScript, and problem-solving.
+   - The Contact section includes a validated, styled form.
+
+Development used Visual Studio Code, adhering to the no-framework rule. The website was tested across browsers and devices for functionality and responsiveness.
+
+## Conclusion
+
+This project strengthened my HTML, CSS, and JavaScript skills, resulting in a professional portfolio website. The side-by-side project card layout, dynamic button text, polished contact form, and clear navigation text improved usability and aesthetics. The responsive design and animations enhance user engagement, reinforcing the importance of design and interactivity in web development.
+
+## References
+
+- W3Schools. (2023). HTML, CSS, and JavaScript Tutorials. Retrieved from https://www.w3schools.com/
+- Google Fonts. (2023). Poppins Font. Retrieved from https://fonts.google.com/specimen/Poppins
+- MDN Web Docs. (2023). Web Development Documentation. Retrieved from https://developer.mozilla.org/
