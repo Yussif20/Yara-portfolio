@@ -12,7 +12,7 @@ The website is designed with a centered, responsive layout and interactive featu
 
    - The `index.html` file includes a header with a navigation menu, sections for About Me, Projects, Skills, and Contact, and a footer.
    - Semantic HTML ensures accessibility.
-   - A mobile-friendly navigation toggle and a custom pop-up for form feedback enhance usability.
+   - A mobile-friendly navigation toggle with a smooth hamburger-to-X animation and a custom pop-up for form feedback enhance usability.
 
 2. **CSS Styling**:
 
@@ -20,15 +20,15 @@ The website is designed with a centered, responsive layout and interactive featu
    - A high-contrast color palette (dark blue #1e3a8a, silver #e5e7eb, white #ffffff, accent blue #3b82f6) ensures readability.
    - Projects are styled as compact cards with larger images, titles below images, and buttons, arranged side-by-side when screen width allows.
    - The contact form is centered, with a polished design and responsive width.
-   - Navigation links have clear, non-boxed text.
-   - Animations include fade-in for sections, slide-in for project details, and a pop-up scale-in effect.
+   - Navigation links have clear, non-boxed text, and sections are offset to account for the sticky header.
+   - Animations include fade-in for sections, slide-in for project details, a pop-up scale-in effect, and a smooth hamburger menu transition.
    - A custom scrollbar matches the theme.
 
 3. **JavaScript Interactivity**:
 
    - The `script.js` file toggles project details with a slide-in animation and updates button text ("Show Details"/"Hide Details").
    - The Contact form validates emails and displays a styled pop-up for feedback.
-   - A mobile menu toggle and pop-up close functionality improve UX.
+   - A mobile menu toggle with animated icon change and pop-up close functionality improve UX.
 
 4. **Content**:
 
@@ -41,7 +41,7 @@ Development used Visual Studio Code, adhering to the no-framework rule. The webs
 
 ## Conclusion
 
-This project strengthened my HTML, CSS, and JavaScript skills, resulting in a professional portfolio website. The side-by-side project card layout, dynamic button text, polished contact form, and clear navigation text improved usability and aesthetics. The responsive design and animations enhance user engagement, reinforcing the importance of design and interactivity in web development.
+This project strengthened my HTML, CSS, and JavaScript skills, resulting in a professional portfolio website. The side-by-side project card layout, dynamic button text, polished contact form, clear navigation text, and smooth hamburger menu animation improved usability and aesthetics. The sticky header offset and responsive design enhance user engagement, reinforcing the importance of design and interactivity in web development.
 
 ## References
 
