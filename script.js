@@ -48,7 +48,10 @@ document.getElementById('popup').addEventListener('click', function(e) {
     }
 });
 
-document.querySelector('.menu-toggle').addEventListener('click', function() {
-    this.classList.toggle('active');
-    document.querySelector('.nav-list').classList.toggle('active');
+document.querySelectorAll('.menu-toggle').forEach(toggle => {
+    toggle.addEventListener('click', function() {
+        this.classList.toggle('active');
+        const navList = this.parentElement.querySelector('.nav-list');
+        navList.classList.toggle('active');
+    });
 });

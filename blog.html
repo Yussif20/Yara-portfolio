@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yara's Blog</title>
+    <link rel="stylesheet" href="blog-style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <h1>Yara's Portfolio</h1>
+        <nav>
+          <div class="menu-toggle">☰</div>
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="blog-intro" class="fade-in">
+        <h2>Welcome to My Blog</h2>
+        <p>
+          Here, I share my journey as a Computer Science student, exploring web
+          development, tackling challenges, and learning new skills. Dive into
+          my posts to see how I'm growing as a developer!
+        </p>
+      </section>
+
+      <section id="blog-posts" class="fade-in">
+        <h2>Recent Posts</h2>
+        <div class="blog-container">
+          <div class="blog-post">
+            <h3>My Journey Learning HTML and CSS</h3>
+            <p class="blog-date">April 10, 2025</p>
+            <p class="blog-excerpt">
+              Learning HTML and CSS was my first step into web development. I
+              started with simple layouts and gradually learned how to style
+              them with colors, fonts, and animations. It was challenging but
+              rewarding to see my designs come to life. This journey taught me
+              the importance of patience and creativity in building
+              user-friendly websites.
+            </p>
+          </div>
+          <div class="blog-post">
+            <h3>Building My Weather App</h3>
+            <p class="blog-date">April 15, 2025</p>
+            <p class="blog-excerpt">
+              Creating my Weather App was a fun project. I used JavaScript to
+              fetch weather data and CSS to make it look clean. The biggest
+              challenge was making it responsive, but I’m proud of the final
+              result. This project showed me how to combine functionality and
+              design effectively.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="blog-subscribe" class="fade-in">
+        <h2>Stay Updated</h2>
+        <p>
+          Want to follow my web development journey? Subscribe to get notified
+          about new posts and updates!
+        </p>
+        <form id="subscribe-form">
+          <label for="subscribe-email">Email:</label>
+          <input type="email" id="subscribe-email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2023 Yara. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

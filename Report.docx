@@ -10,7 +10,7 @@ The website is designed with a centered, responsive layout and interactive featu
 
 1. **HTML Structure**:
 
-   - The `index.html` file includes a header with a navigation menu, sections for About Me, Projects, Skills, and Contact, and a footer.
+   - The `index.html` file includes a header with a navigation menu, sections for About Me, Projects, Skills, and Contact, and a footer. A new `blog.html` page was added to share insights and updates, accessible via a Blog link in the navigation.
    - Semantic HTML ensures accessibility.
    - A mobile-friendly navigation toggle with a smooth hamburger-to-X animation and a custom pop-up for form feedback enhance usability.
 
@@ -18,7 +18,7 @@ The website is designed with a centered, responsive layout and interactive featu
 
    - The `style.css` file uses the Poppins font from Google Fonts.
    - A high-contrast color palette (dark blue #1e3a8a, silver #e5e7eb, white #ffffff, accent blue #3b82f6) ensures readability.
-   - Projects are styled as compact cards with larger images, titles below images, and buttons, arranged side-by-side when screen width allows.
+   - Projects and blog posts are styled as compact cards with larger images, titles below images, and buttons, arranged side-by-side when screen width allows.
    - The contact form is centered, with a polished design and responsive width.
    - Navigation links have clear, non-boxed text, and sections are offset to account for the sticky header.
    - Animations include fade-in for sections, slide-in for project details, a pop-up scale-in effect, and a smooth hamburger menu transition.
@@ -29,6 +29,7 @@ The website is designed with a centered, responsive layout and interactive featu
    - The `script.js` file toggles project details with a slide-in animation and updates button text ("Show Details"/"Hide Details").
    - The Contact form validates emails and displays a styled pop-up for feedback.
    - A mobile menu toggle with animated icon change and pop-up close functionality improve UX.
+   - The Blog page uses minimal JavaScript (temporary alert for "Read More" buttons), maintaining simplicity.
 
 4. **Content**:
 
@@ -36,12 +37,35 @@ The website is designed with a centered, responsive layout and interactive featu
    - The Projects section features two projects (Weather App and To-Do App) with placeholder images.
    - The Skills section lists HTML, CSS, JavaScript, and problem-solving.
    - The Contact section includes a validated, styled form.
+   - The Blog page includes two sample posts about learning HTML/CSS and building the Weather App, with titles, dates, excerpts, and buttons.
 
 Development used Visual Studio Code, adhering to the no-framework rule. The website was tested across browsers and devices for functionality and responsiveness.
 
+## Case Study
+
+### Overview
+
+The personal portfolio website was developed to demonstrate proficiency in front-end web development for a Computer Science student. The goal was to create a visually appealing, interactive, and responsive platform to showcase skills, projects, and insights, addressing the course's requirement for a practical application of HTML, CSS, and JavaScript.
+
+### Challenges
+
+- **Navigation Visibility**: Ensuring navigation links were clear and accessible across devices, particularly on a separate Blog page.
+- **Content Presentation**: Designing project and blog cards that balance aesthetics and functionality, with side-by-side layout on wider screens and clear rendering.
+- **User Interaction**: Implementing smooth animations (e.g., hamburger-to-X toggle, pop-up) without frameworks, while maintaining performance.
+
+### Solutions
+
+- Used consistent navigation across `index.html` and `blog.html`, with a Blog link added to the header.
+- Used flexbox (`display: flex`, `flex-wrap: wrap`) to arrange project and blog cards side-by-side on larger screens, with fixed-width cards (450px) for clarity.
+- Implemented CSS transitions for the hamburger menu (`opacity` and `transform`) and JavaScript for dynamic button text, enhancing interactivity.
+
+### Outcomes
+
+The website successfully met the course objectives, providing a professional portfolio with a modern design. The addition of the Blog page enhanced its value by allowing the student to share learning experiences. User testing (simulated) confirmed intuitive navigation, clear content visibility, and engaging interactions. The project reinforced skills in responsive design, animation, and client-focused development, preparing the student for real-world web development tasks.
+
 ## Conclusion
 
-This project strengthened my HTML, CSS, and JavaScript skills, resulting in a professional portfolio website. The side-by-side project card layout, dynamic button text, polished contact form, clear navigation text, and smooth hamburger menu animation improved usability and aesthetics. The sticky header offset and responsive design enhance user engagement, reinforcing the importance of design and interactivity in web development.
+This project strengthened my HTML, CSS, and JavaScript skills, resulting in a professional portfolio website. The side-by-side project and blog card layouts, dynamic button text, polished contact form, clear navigation text, and smooth hamburger menu animation improved usability and aesthetics. The responsive design and animations enhance user engagement, reinforcing the importance of design and interactivity in web development.
 
 ## References
 

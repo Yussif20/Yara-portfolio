@@ -3,13 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Yara's personal portfolio showcasing projects and skills."
-    />
-    <meta name="keywords" content="portfolio, web development, projects" />
-    <meta name="author" content="Yara" />
-    <link rel="icon" href="assets/developer.png" type="image/x-icon" />
     <title>Yara's Personal Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link
@@ -19,15 +12,13 @@
   </head>
   <body>
     <header>
-      <div class="header-layout">
+      <div class="header-container">
         <h1>Yara's Portfolio</h1>
         <nav>
           <div class="menu-toggle">☰</div>
           <ul class="nav-list">
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
           </ul>
         </nav>
       </div>
@@ -74,11 +65,11 @@
 
       <section id="skills" class="fade-in">
         <h2>Skills</h2>
-        <ul>
-          <li>HTML & CSS</li>
-          <li>JavaScript</li>
-          <li>Web Design</li>
-          <li>Problem Solving</li>
+        <ul class="skills-list">
+          <li class="skills-list__item">HTML & CSS</li>
+          <li class="skills-list__item">JavaScript</li>
+          <li class="skills-list__item">Web Design</li>
+          <li class="skills-list__item">Problem Solving</li>
         </ul>
       </section>
 
