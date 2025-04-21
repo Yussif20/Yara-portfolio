@@ -19,39 +19,73 @@ function toggleDetails(id, button) {
     }
 }
 
-document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    const email = document.getElementById('email').value;
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+document.addEventListener('DOMContentLoaded', function() {
+    // Contact form submission
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const popup = document.getElementById('popup');
+            const popupMessage = document.getElementById('popup-message');
+            
+            if (!emailPattern.test(email)) {
+                popupMessage.textContent = 'Please enter a valid email address.';
+                popup.style.display = 'flex';
+                return;
+            }
+            
+            popupMessage.textContent = 'Message sent successfully!';
+            popup.style.display = 'flex';
+            this.reset();
+        });
+    }
+
+    // Subscribe form submission
+    const subscribeForm = document.getElementById('subscribe-form');
+    if (subscribeForm) {
+        subscribeForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('subscribe-email').value;
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const popup = document.getElementById('popup');
+            const popupMessage = document.getElementById('popup-message');
+            
+            if (!emailPattern.test(email)) {
+                popupMessage.textContent = 'Please enter a valid email address.';
+                popup.style.display = 'flex';
+                return;
+            }
+            
+            popupMessage.textContent = 'Subscribed successfully!';
+            popup.style.display = 'flex';
+            this.reset();
+        });
+    }
+
+    // Popup close
     const popup = document.getElementById('popup');
-    const popupMessage = document.getElementById('popup-message');
-    
-    if (!emailPattern.test(email)) {
-        popupMessage.textContent = 'Please enter a valid email address.';
-        popup.style.display = 'flex';
-        return;
+    if (popup) {
+        document.getElementById('popup-close').addEventListener('click', function() {
+            popup.style.display = 'none';
+        });
+
+        popup.addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.style.display = 'none';
+            }
+        });
     }
-    
-    popupMessage.textContent = 'Message sent successfully!';
-    popup.style.display = 'flex';
-    this.reset();
-});
 
-document.getElementById('popup-close').addEventListener('click', function() {
-    document.getElementById('popup').style.display = 'none';
-});
-
-document.getElementById('popup').addEventListener('click', function(e) {
-    if (e.target === this) {
-        this.style.display = 'none';
-    }
-});
-
-document.querySelectorAll('.menu-toggle').forEach(toggle => {
-    toggle.addEventListener('click', function() {
-        this.classList.toggle('active');
-        const navList = this.parentElement.querySelector('.nav-list');
-        navList.classList.toggle('active');
+    // Menu toggle
+    document.querySelectorAll('.menu-toggle').forEach(toggle => {
+        toggle.addEventListener('click', function() {
+            this.classList.toggle('active');
+            const navList = this.parentElement.querySelector('.nav-list');
+            navList.classList.toggle('active');
+        });
     });
 });
